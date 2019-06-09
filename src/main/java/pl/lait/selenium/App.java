@@ -23,9 +23,9 @@ public class App
         driver.findElement(By.linkText("CONTACT")).click();
         sleep(2);
         driver.findElement(By.linkText("SUPPORT")).click();
-        sleep(2);
-        driver.findElement(By.linkText("REGISTER")).click();
         sleep(3);
+        driver.findElement(By.linkText("REGISTER")).click();
+        sleep(4);
         driver.findElement(By.linkText("SIGN-ON")).click();
         
     }
