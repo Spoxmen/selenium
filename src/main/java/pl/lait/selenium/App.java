@@ -8,35 +8,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * Hello world!
  *
  */
-public class App 
-{
-	
+public class App {
+
 	static WebDriver driver;
-	
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\user1\\chromedriver.exe");
-        
-        driver = new ChromeDriver();
-        driver.get("http://newtours.demoaut.com/");
-        driver.findElement(By.linkText("CONTACT")).click();
-        sleep(2);
-        driver.findElement(By.linkText("SUPPORT")).click();
-        sleep(3);
-        driver.findElement(By.linkText("REGISTER")).click();
-        sleep(4);
-        driver.findElement(By.linkText("SIGN-ON")).click();
-        
-    }
-    
-    public static void sleep(int seconds) {
-        try {
-			Thread.sleep(seconds*1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
-		}
-    }
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+
+	}
+
 }
