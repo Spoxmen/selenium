@@ -127,9 +127,9 @@ public class MainMenuTest {
 		Init.sleep(2);
 		
 		rp2.allFiller("Zenek", "Zenkowski", "KSML", "DC", "1234123412341234");
-		Init.sleep(5);
+		Init.sleep(2);
 		rp2.buyFlightClicker();
-		Init.sleep(5);
+		Init.sleep(2);
 		rp2.logoutButtonClicker();
 		
 	}
