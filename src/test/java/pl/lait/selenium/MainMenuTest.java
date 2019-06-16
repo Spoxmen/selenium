@@ -117,20 +117,30 @@ public class MainMenuTest {
 		ReservationPage rp = new ReservationPage();
 		ReservationPage2 rp2 = new ReservationPage2();
 		
+		Init.printScr(driver, "folderName", "buyFlight");
+		
 		mp.signonLinkClick();
+		Init.printScr(driver, "folderName", "buyFlight");
 		log.loginAs("ZenekNiszczyciel","Zenek123");
+		Init.printScr(driver, "folderName", "buyFlight");
 		rp.allClicker("2", "London", "2", "2", "Frankfurt", "3", "2", "Unified Airlines");
+		Init.printScr(driver, "folderName", "buyFlight");
 		Init.sleep(2);
 		
 		rp2.bothClicker();
+		Init.printScr(driver, "folderName", "buyFlight");
 		rp2.resButtClicker();
+		Init.printScr(driver, "folderName", "buyFlight");
 		Init.sleep(2);
 		
 		rp2.allFiller("Zenek", "Zenkowski", "KSML", "DC", "1234123412341234");
+		Init.printScr(driver, "folderName", "buyFlight");
 		Init.sleep(2);
 		rp2.buyFlightClicker();
+		Init.printScr(driver, "folderName", "buyFlight");
 		Init.sleep(2);
 		rp2.logoutButtonClicker();
+		Init.printScr(driver, "folderName", "buyFlight");
 		
 	}
 
