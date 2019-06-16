@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import pageObjects.LoginPage;
 import pageObjects.MainPage;
 import pageObjects.ReservationPage;
+import pageObjects.ReservationPage2;
 
 public class MainMenuTest {
 
@@ -64,7 +65,7 @@ public class MainMenuTest {
 		Init.sleep(2);
 	}
 	
-	@Test
+	@Ignore
 	public void reservation() {
 		LoginPage log = new LoginPage();
 		MainPage mp = new MainPage();
@@ -107,6 +108,30 @@ public class MainMenuTest {
 		log.loginAs("ZenekNiszczyciel","Zenek123");
 		rp.allClicker("2", "London", "2", "2", "Frankfurt", "3", "2", "Unified Airlines");
 		Init.sleep(10);
+	}
+	
+	@Test
+	public void buyFlight() {
+		LoginPage log = new LoginPage();
+		MainPage mp = new MainPage();
+		ReservationPage rp = new ReservationPage();
+		ReservationPage2 rp2 = new ReservationPage2();
+		
+		mp.signonLinkClick();
+		log.loginAs("ZenekNiszczyciel","Zenek123");
+		rp.allClicker("2", "London", "2", "2", "Frankfurt", "3", "2", "Unified Airlines");
+		Init.sleep(2);
+		
+		rp2.bothClicker();
+		rp2.resButtClicker();
+		Init.sleep(2);
+		
+		rp2.allFiller("Zenek", "Zenkowski", "KSML", "DC", "1234123412341234");
+		Init.sleep(5);
+		rp2.buyFlightClicker();
+		Init.sleep(5);
+		rp2.logoutButtonClicker();
+		
 	}
 
 	@After
