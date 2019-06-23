@@ -27,7 +27,7 @@ public class Init {
 			//driver = new ChromeDriver();
 			URL url = null;
 			try {
-				url = new URL("http://192.168.0.105:4444/wd/hub");
+				url = new URL("http://192.168.0.113:4444/wd/hub");
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
